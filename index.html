@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Phantom Thift - Steam Games Murah</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome Icons (v6 free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts: Persona-style bold sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Background overlay dengan efek garis Persona -->
+  <div class="bg-noise"></div>
+  
+  <!-- Header / Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="assets/logo-phantom.png" alt="Phantom Thift Logo" class="logo-img">
+      <span>PHANTOM THIFT</span>
+    </div>
+    <div class="nav-links">
+      <a href="#" class="active">HOME</a>
+      <a href="#">STORE</a>
+      <a href="#">DEALS</a>
+      <a href="#">COMMUNITY</a>
+    </div>
+    <div class="cart-icon" id="cartIcon">
+      <i class="fas fa-shopping-cart"></i>
+      <span id="cartCount" class="cart-badge">0</span>
+    </div>
+  </header>
+
+  <!-- Hero / Date & Time Persona style -->
+  <section class="hero">
+    <div class="datetime-box">
+      <div class="date" id="currentDate"></div>
+      <div class="time" id="currentTime"></div>
+      <div class="memento">THE PHANTOM THIEVES' DEALS</div>
+    </div>
+    <h1 class="glitch-text">Steam Games<br><span class="accent">Lower Price</span></h1>
+    <p class="tagline">"Take your heart — and your wallet."</p>
+  </section>
+
+  <!-- Game Grid Container -->
+  <main class="container">
+    <div class="section-title">
+      <i class="fas fa-gamepad"></i>
+      <h2>SPECIAL OFFERS</h2>
+      <div class="line"></div>
+    </div>
+    <div class="games-grid" id="gamesGrid"></div>
+  </main>
+
+  <!-- ========== FORM CONTACT (PERSONA STYLE) ========== -->
+  <section class="contact-section container">
+    <div class="section-title">
+      <i class="fas fa-envelope"></i>
+      <h2>CONTACT US</h2>
+      <div class="line"></div>
+    </div>
+    <div class="contact-card">
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="fullname"><i class="fas fa-user"></i> Nama Lengkap</label>
+          <input type="text" id="fullname" name="fullname" placeholder="e.g., Yu Narukami" required>
+        </div>
+        <div class="form-group">
+          <label for="email"><i class="fas fa-at"></i> Email</label>
+          <input type="email" id="email" name="email" placeholder="phantom@thift.com" required>
+        </div>
+        <div class="form-group">
+          <label for="subject"><i class="fas fa-heading"></i> Judul Pesan</label>
+          <input type="text" id="subject" name="subject" placeholder="Subject of your message" required>
+        </div>
+        <div class="form-group">
+          <label for="message"><i class="fas fa-comment-dots"></i> Pesan</label>
+          <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">
+          <i class="fas fa-paper-plane"></i> KIRIM PESAN
+        </button>
+      </form>
+      <div class="contact-note">
+        <i class="fas fa-shield-alt"></i> Your message will be answered within 24 hours (Phantom speed).
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Phantom Thift — Not official Steam store. All trademarks belong to their owners.</p>
+    <p>Persona 3 Reload inspired UI | Phantom Thift v1.0</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
